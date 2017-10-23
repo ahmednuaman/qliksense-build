@@ -6,9 +6,9 @@ const path = require('path')
 
 const BUILD_DIR = './build'
 const CWD = process.cwd()
-const PKG = require(path.resolve(CWD, './package.json'))
+const NAME = process.env.NAME
 
-const output = fs.createWriteStream(path.resolve(CWD, BUILD_DIR, `${PKG.name}.zip`))
+const output = fs.createWriteStream(path.resolve(CWD, BUILD_DIR, `${NAME}.zip`))
 const archive = archiver('zip', {
   zlib: {
     level: 9
@@ -32,7 +32,7 @@ archive.on('error', (err) => {
   throw err
 })
 
-const files = ['grid.html', 'preview.png'].concat(['css', 'html', 'js', 'qext'].map((ext) => `${PKG.name}.${ext}`))
+const files = ['grid.html', 'preview.png'].concat(['css', 'html', 'js', 'qext'].map((ext) => `${NAME}.${ext}`))
 const wbfolder =
   files
     .map((name) => {
