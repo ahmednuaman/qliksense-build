@@ -1,6 +1,6 @@
 {
   "name": "qliksense-build",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/ahmednuaman/qliksense-build#readme",
   "dependencies": {
-    "archiver": "^2.1.0"
+    "archiver": "^2.1.0",
+    "make-dir": "^1.1.0"
   },
   "devDependencies": {
     "snazzy": "^7.0.0",
