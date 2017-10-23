@@ -1,0 +1,30 @@
+{
+  "name": "qliksense-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "qliksense-build": "./index.js"
+  },
+  "scripts": {
+    "test": "standard --fix --verbose | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmednuaman/qliksense-build.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmednuaman/qliksense-build/issues"
+  },
+  "homepage": "https://github.com/ahmednuaman/qliksense-build#readme",
+  "dependencies": {
+    "archiver": "^2.1.0"
+  },
+  "devDependencies": {
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  }
+}
