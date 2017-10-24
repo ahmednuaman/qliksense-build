@@ -43,6 +43,7 @@ makeDir(path.resolve(CWD, BUILD_DIR))
 
           return name
         })
+        .reverse()
         .join(';\n')
 
     archive.append(wbfolder, {
